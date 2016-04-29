@@ -1,6 +1,6 @@
 {
   "name": "mangoSlugfy",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Convert string to slug",
   "main": "index.js",
   "scripts": {
