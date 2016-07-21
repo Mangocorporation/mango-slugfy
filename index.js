@@ -8,10 +8,7 @@
  * @return string
  */
 function mangoSlugfy(str, separator) {
-    separator = (separator || separator === '') ? separator :  '-';
-
-    str = str.replace(/^\s+|\s+$/g, '');
-    str = str.toLowerCase();
+    separator = (separator || separator === '') ? separator : '-';
 
     var from = "àáäâèéëêìíïîòóöôùúüûñç·/_,:;";
     var to = "aaaaeeeeiiiioooouuuunc------";
@@ -19,9 +16,18 @@ function mangoSlugfy(str, separator) {
     for (var i = 0, l = from.length; i < l; i++)
         str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
 
-    str = str.replace(/[^a-z0-9 -]/g, '').replace(/\s+/g, separator).replace(/-+/g, separator);
+    str = camelize(str);
+    str = str.replace(/^\s+|\s+$/g, '-');
+    str = str.replace(/\s+/g, separator).replace(/-+/g, separator);
 
     return str;
 }
+
+function camelize(str) {
+    return str.replace(/\W+(.)/g, function (match, chr) {
+        return ' ' + chr.toUpperCase();
+    });
+}
+
 
 module.exports = mangoSlugfy;
