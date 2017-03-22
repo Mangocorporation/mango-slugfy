@@ -1,6 +1,6 @@
 {
-  "name": "mangoSlugfy",
-  "version": "1.0.1",
+  "name": "@mangocorporation/mango-slugfy",
+  "version": "1.0.2",
   "description": "Convert string to slug",
   "main": "index.js",
   "scripts": {
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/raulmangolin/mango-slugfy.git"
+    "url": "git+https://github.com/Mangocorporation/mango-slugfy.git"
   },
   "author": "Raul Mangolin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/raulmangolin/mango-slugfy/issues"
+    "url": "https://github.com/Mangocorporation/mango-slugfy/issues"
   },
-  "homepage": "https://github.com/raulmangolin/mango-slugfy#readme"
+  "homepage": "https://github.com/Mangocorporation/mango-slugfy#readme"
 }
