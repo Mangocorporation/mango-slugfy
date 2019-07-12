@@ -1,4 +1,4 @@
-#Mango Slugfy
+# Mango Slugfy
 
 ## Install
 
